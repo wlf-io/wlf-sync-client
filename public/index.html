@@ -144,9 +144,6 @@
         const setData = (data) => {
             sock.emit("setData", data);
         };
-        const debug = () => {
-            sock.emit("debug", true);
-        };
 
         const setName = (name) => {
             name = name || prompt("New Name?");
